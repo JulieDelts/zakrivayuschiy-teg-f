@@ -1,5 +1,8 @@
 .page {
+  min-inline-size: 375px;
+  max-inline-size: 700px;
   min-block-size: 100dvb;
+  margin: 0 auto;
   font-family: var(--primary-font-family), sans-serif;
   color: var(--main-color);
   font-weight: 410;
@@ -8,9 +11,6 @@
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .button {
@@ -54,27 +54,19 @@
 /* Header */
 
 .header {
-  padding-block: 100px;
-  max-inline-size: 100%;
-  inline-size: var(--container-width);
+  inline-size: 100%;
   font-family: var(--secondary-font-family), fantasy;
-}
-
-.header__logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-  padding-inline: clamp(16px, 8.5vw, 122px);
   background-color: var(--secondary-color);
   border: var(--container-border);
   padding-block: clamp(122px, 10vw, 130px);
   text-transform: uppercase;
+  text-align: center;
+  margin-block: 100px;
 }
 
 .header__title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  margin-block-end: 18px;
 }
 
 .header__description {
@@ -88,7 +80,6 @@
   flex-direction: column;
   gap: 50px;
   list-style: none;
-  inline-size: var(--container-width);
 }
 
 .content__card {
@@ -272,7 +263,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  inline-size: var(--container-width);
   padding-block-start: 48px;
   padding-block-end: 100px;
 }
@@ -283,7 +273,7 @@ img {
   align-items: center;
   gap: 8px;
   padding-block: clamp(17px, 1vw, 22px);
-  padding-inline: clamp(10px, 1vw, 16px);
+  padding-inline: clamp(10px, 1vw, 15px);
   width: clamp(306px, 50vw, 335px);
 }
 
