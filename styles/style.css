@@ -1,5 +1,5 @@
 .page {
-  min-inline-size: 375px;
+  min-inline-size: 350px;
   min-block-size: 100dvb;
   font-family: var(--primary-font-family), sans-serif;
   color: var(--main-color);
@@ -8,7 +8,6 @@
   background-image: var(--page-background);
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,7 +100,7 @@
   position: relative;
 }
 
-.html-tag {
+.card-tag {
   position: absolute;
   font-family: var(--secondary-font-family), fantasy;
   text-transform: uppercase;
@@ -121,7 +120,7 @@
   (text-stroke: 0.5px var(--secondary-color)) or
     (-webkit-text-stroke: 0.5px var(--secondary-color))
 ) {
-  .html-tag {
+  .card-tag {
     -webkit-text-stroke: 0.5px var(--secondary-color);
     text-stroke: 0.5px var(--secondary-color);
     text-shadow: none;
@@ -238,37 +237,37 @@ img {
   min-inline-size: 130px;
 }
 
-.car {
+.grayscale-filter {
   filter: grayscale(45%);
 }
 
-.glass {
+.saturation-filter {
   filter: saturate(180%);
 }
 
-.house {
+.contrast-filter {
   filter: contrast(180%);
 }
 
-.stone {
+.invert-opacity-filter {
   filter: invert(0.7) opacity(0.8);
 }
 
-.koi {
+.sepia-filter {
   filter: sepia(70%);
 }
 
-.abstract {
+.blur-filter {
   filter: blur(0.3rem);
 }
 
-.fall {
+.hue-filter {
   filter: hue-rotate(-35deg);
 }
 
-/* Footer */
+/* Save memory section */
 
-.footer {
+.save-memory {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -295,7 +294,7 @@ img {
   mix-blend-mode: difference;
 }
 
-@media (width >= 1440px) {
+@media (width >= 700px) {
   .save-button {
     flex-direction: row;
     gap: 6px;
