@@ -58,7 +58,7 @@
   font-family: var(--secondary-font-family), fantasy;
   background-color: var(--secondary-color);
   border: var(--container-border);
-  padding-block: clamp(122px, 10vw, 128px);
+  padding-block: clamp(121px, 10vw, 128px);
   text-transform: uppercase;
   text-align: center;
   margin-block: 100px;
@@ -257,8 +257,6 @@ img {
   filter: hue-rotate(-35deg);
 }
 
-/* Save memory section */
-
 .save-memory {
   display: flex;
   flex-direction: column;
@@ -271,8 +269,9 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   gap: 8px;
-  padding-block: clamp(17px, 1vw, 22px);
+  padding-block: 15px;
   padding-inline: clamp(10px, 1vw, 15px);
   width: clamp(306px, 50vw, 335px);
 }
@@ -287,7 +286,10 @@ img {
 @media (width >= 700px) {
   .save-button {
     flex-direction: row;
-    gap: 8px;
+  }
+
+  .icon {
+    width: 22px;
   }
 }
 
