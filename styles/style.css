@@ -58,7 +58,7 @@
   font-family: var(--secondary-font-family), fantasy;
   background-color: var(--secondary-color);
   border: var(--container-border);
-  padding-block: clamp(122px, 10vw, 130px);
+  padding-block: clamp(122px, 10vw, 128px);
   text-transform: uppercase;
   text-align: center;
   margin-block: 100px;
